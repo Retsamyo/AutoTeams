@@ -22,10 +22,10 @@
           {% for player,atrib in all_players.items %}
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                <img src="{{images|get_value:player}}" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">{{player}}</text>
-                  <img src="{{images|get_value:player}}" class="card-img-top">
-                </svg>
+                
                 <div class="card-body">
                   {% for key,value in atrib.items %}
                     <p class="card-text">{{key}}: {{value}}</p>
